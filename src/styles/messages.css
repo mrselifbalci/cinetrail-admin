@@ -1,0 +1,23 @@
+.messages-wrapper {
+  background-color: var(--bg-dark);
+  width: 95%;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+}
+.message-detail-container {
+  background-color: var(--bg-dark);
+  width: 80%;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+}
+.message-detail-wrapper {
+  background-color: var(--bg-medium);
+  width: 90%;
+  text-align: center;
+  margin: 5%;
+  padding: 1%;
+  height: 50vh;
+}
+.message-detail-wrapper span {
+  color: var(--button-red);
+}

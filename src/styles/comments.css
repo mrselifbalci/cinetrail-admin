@@ -1,0 +1,91 @@
+.comment-detail-container {
+  background-color: var(--bg-dark);
+  width: 80%;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+}
+.block-reason {
+  color: var(--text-color-primary);
+  margin: 10px;
+  text-align: center;
+}
+
+.comment-detail-wrapper {
+  background-color: var(--bg-medium);
+  width: 87%;
+  text-align: center;
+  margin: 5%;
+  padding: 1%;
+  height: 40vh;
+}
+.comment-author-container {
+  margin-top: 7%;
+}
+.comment-detail-wrapper span {
+  color: var(--button-red);
+}
+.comment-close-modal-x {
+  color: var(--button-red);
+  text-align: right;
+  font-size: var(--title-font-size);
+  margin-right: 2%;
+  padding-top: 1%;
+}
+.comment-modal-content {
+  height: 300px;
+  background-color: var(--bg-dark);
+  border: none;
+  width: 40%;
+  margin: 1% auto 1% auto;
+}
+.comment-modal-content:focus {
+  outline: none;
+  box-shadow: none;
+}
+.comment-modal-overlay {
+  position: fixed;
+  top: var(--header-height);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.6);
+}
+.comment-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment-modal-form select {
+  width: 50%;
+  height: 30px;
+}
+.comment-update-button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+}
+.modal-container h1 {
+  color: var(--text-color-primary);
+  width: 100%;
+  text-align: center;
+}
+.comments-wrapper {
+  background-color: var(--bg-dark);
+  width: 100%;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+}
+@media (max-width: 768px) {
+  .comment-detail-wrapper {
+    height: 80vh;
+    padding: 1%;
+  }
+  .comments-wrapper {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .comments-wrapper {
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,7 @@
+.ratings-wrapper {
+  background-color: var(--bg-dark);
+  width: 100%;
+  color: var(--text-color-primary);
+  min-height: 90vh;
+  max-width: 100%;
+}

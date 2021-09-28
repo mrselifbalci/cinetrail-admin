@@ -1,0 +1,90 @@
+.already-loggedin-text {
+  font-size: 50px;
+  color: var(--button-red);
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.signin-form-container {
+  color: var(--text-color-primary);
+  background-color: var(--bg-dark);
+  height: 500px;
+  width: 500px;
+  border-radius: 2%;
+  margin-left: 35%;
+  margin-top: 7%;
+}
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 20%;
+  text-align: center;
+}
+.signin-form-title {
+  font-size: 50px;
+}
+.signin-form-email,
+.signin-form-password {
+  width: 100%;
+}
+.signin-form-email input,
+.signin-form-password input {
+  width: 75%;
+  height: 40px;
+  margin-top: 5%;
+  background-color: var(--bg-light);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-md);
+}
+
+.signin-button {
+  margin-top: 10%;
+  width: 100px;
+}
+
+.signin-form-email input::placeholder,
+.signin-form-password input::placeholder {
+  color: var(--text-color-primary);
+  padding-left: 2%;
+  font-size: var(--font-size-md);
+}
+@media (max-width: 768px) {
+  .signin-form-container {
+    margin-left: 18%;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 545px) {
+  .signin-form-container {
+    width: 300px;
+    margin-left: 11%;
+    margin-top: 30%;
+  }
+}
+.swal-modal {
+  background-color: var(--bg-light);
+}
+.swal-button--confirm,
+.swal-icon {
+  background-color: var(--button-red);
+}
+.swal-button--confirm:hover {
+  background-color: var(--button-red);
+}
+.swal-button--cancel {
+  background-color: var(--text-color-secondary);
+  color: var(--text-color-primary);
+}
+.swal-button--cancel:hover {
+  background-color: var(--bg-dark);
+  color: var(--bg-dark);
+}
+.swal-text,
+.swal-title {
+  color: white;
+}
