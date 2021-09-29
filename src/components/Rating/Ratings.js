@@ -9,14 +9,15 @@ import Modal from 'react-modal';
 import '../../styles/table.css'
 import '../../styles/ratings.css'
 import {Link} from 'react-router-dom' 
-import {COLUMNS} from './RatingTableData' 
+import {COLUMNS} from './RatingTableData'  
 import swal from 'sweetalert';
+require('dotenv').config();
 
 
 Modal.setAppElement('#root');
 export default function Ratings({apiBaseUrl}) {
 
-  const apiKey = 'e15d510497f0c76895f1c76ac17b08d4';
+  const apiKey = process.env.API_KEY
   const url='https://api.themoviedb.org/3/movie/550?api_key='
 
 
@@ -51,7 +52,7 @@ export default function Ratings({apiBaseUrl}) {
      
 .get
 // (`${url}${apiKey}&language=en-US`)
-('https://api.themoviedb.org/3/search/movie?api_key=e15d510497f0c76895f1c76ac17b08d4&query=lion')
+(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=lion`)
       .then((res) => {
         console.log(res.data);
       })

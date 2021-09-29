@@ -4,18 +4,19 @@ import axios from "axios";
 import '../../styles/table.css'
 import '../../styles/trailers.css' 
 import Search from './Search'
+require('dotenv').config();
 
 export default function AddTrailer({apiBaseUrl}) {
 const tmdbBaseUrl = 'https://api.themoviedb.org/3'
-const apiKey = "e15d510497f0c76895f1c76ac17b08d4"
+const apiKey = process.env.API_KEY
   const history = useHistory();
   const [showItems, setShowItems] = useState("items-not-visible");
-  const [movieItems, setMovieItems] = useState("items-visible");
+  const [movieItems, setMovieItems] = useState("items-visible"); 
   const [image, setImage] = useState("");
   const [mediaUrl, setMediaUrl] = useState("");
 
   // const [banner, setBanner] = useState("");
-  const [type, setType] = useState("");
+  const [type, setType] = useState(""); 
   const [title, setTitle] = useState("");
   // const [episodeTitle, setEpisodeTitle] = useState("");
   const [year, setYear] = useState("");
